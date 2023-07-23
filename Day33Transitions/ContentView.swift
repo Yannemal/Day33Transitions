@@ -59,11 +59,12 @@ struct ContentView: View {
                     Rectangle()
                         .fill(.orange)
                         .frame(width: 200, height: 200)
-                        .transition(.asymmetric(insertion: .offset(y:1000)
-                                                .combined(with: .scale)
-                                                ,
-                                                
-                                                removal: .push(from: .top)))
+//                        .transition(.asymmetric(insertion: .offset(y:1000)
+//                                                .combined(with: .scale)
+//                                                ,
+//
+//                                                removal: .push(from: .top)))
+                        .transition(.push(from: .trailing))
                     // issues in Canvas insertion but removal ok. better in sim
                 }
             } // endVStack
